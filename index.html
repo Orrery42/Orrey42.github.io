@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Copse', sans-serif;
+            background-image: url('fondo1.jpg');
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: white; /* Texto en blanco para todo el cuerpo */
+        }
+        nav {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: gray;
+            color: black;
+        }
+        header {
+            margin-top: 80px; /* Aumentar el margen superior para bajar el título */
+            text-align: center;
+        }
+        footer {
+            margin-top: auto;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .banner {
+            position: relative;
+            overflow: hidden;
+            height: 400px; /* Altura del banner */
+            border: 5px solid white; /* Borde alrededor del banner */
+            border-radius: 10px; /* Bordes redondeados */
+            margin: 20px 0; /* Margen superior e inferior */
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Mantiene la proporción de la imagen */
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        .banner img.active {
+            opacity: 1;
+        }
+        .content {
+            padding: 20px; /* Espaciado para el contenido principal */
+            text-align: center; /* Centramos el texto del contenido */
+            border-left: 5px solid white; /* Borde izquierdo */
+            border-right: 5px solid white; /* Borde derecho */
+            margin: 0 15%; /* Margen para centrar el contenedor */
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+        h2 {
+            text-align: center;
+            margin-top: 30px; /* Margen superior para el subtítulo */
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="novela.html">Novel</a></li>
+        <li><a href="videojuego.html">Game</a></li>
+    </ul>
+</nav>
+
+<div class="banner">
+    <img src="ft1.jpg" class="active" alt="Description of image 1">
+    <img src="ft2.jpg" alt="Description of image 2">
+    <img src="ft3.jpg" alt="Description of image 3">
+</div>
+
+<script>
+    const images = document.querySelectorAll('.banner img');
+    let currentIndex = 0;
+
+    function changeImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+    }
+
+    setInterval(changeImage, 3000); // Cambia la imagen cada 3 segundos
+</script>
+
+<header>
+    <h1>Welcome to Orrery 42</h1>
+</header>
+
+
+
+<div class="content">
+    <h2>Our Project</h2>
+    <p>Welcome to "ExOdyssey", an exciting project that combines the fun of an educational game with the captivating narrative of a novel. Designed to inspire and educate, "ExOdyssey" invites young explorers to embark on an intergalactic adventure about exoplanets, where they will learn about the universe and its wonders through interactive gameplay and an engaging story.</p>
+    <p>On this journey, children will not only enjoy solving challenges and discovering new galaxies, but they will also develop critical skills such as logical thinking, collaboration, and scientific curiosity. The novel complements the gaming experience, providing a rich background and endearing characters to guide players on their cosmic journey.</p>
+    <p>Through "ExOdyssey", we aim to foster a passion for science and exploration while cultivating a sense of wonder at the vast universe around us. Join us and discover the secrets of space!</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Orrery 42. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

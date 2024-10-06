@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Copse', sans-serif;
+            background-image: url('fondo2.jpg');
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: white;
+        }
+        nav {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: gray;
+            color: black;
+        }
+        footer {
+            margin-top: auto;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gallery-item {
+            display: flex;
+            margin-bottom: 20px;
+            width: 100%;
+            align-items: center; /* Alinea verticalmente */
+        }
+        .gallery img {
+            margin-right: 15px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+            max-width: 200px; /* Aumenta el tamaño de la imagen */
+            height: auto; /* Mantiene la proporción */
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item p {
+            color: white;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="novela.html">Novel</a></li>
+        <li><a href="videojuego.html" class="active">Game</a></li>
+    </ul>
+</nav>
+
+<div class="container mt-5">
+    <h1>"Interactive Educational Game with Chatbot: An educational game focused on the exploration of exoplanets."</h1>
+    <div class="row gallery">
+        <div class="col-md-8 gallery-item">
+            <img src="J1.png" class="img-fluid" alt="Foto 1">
+            <p>This game focuses on learning about exoplanets, but it has a unique feature that distinguishes it from other educational games. It includes a narrative voice designed to make the experience more accessible and comfortable for visually impaired children.</p>
+        </div>
+        <div class="col-md-8 gallery-item">
+            <img src="j2.png" class="img-fluid" alt="Foto 2">
+            <p>. Additionally, the game offers the option to disable the narration for those who prefer to play without it.</p>
+        </div>
+        <div class="col-md-8 gallery-item">
+            <img src="j3.png" class="img-fluid" alt="Foto 3">
+            <p>The game centers around a group of astronauts whose ship has suffered damage. To repair it and return home, they must explore various exoplanets, delving into their depths in search of essential materials.</p>
+        </div>
+        <div class="col-md-8 gallery-item">
+            <img src="j4.png" class="img-fluid" alt="Foto 4">
+            <p>Each planet is filled with adventures and challenges, and players will receive help from a chatbot that provides hints and guidance while they learn along the way.</p>
+        </div>
+        <div class="col-md-8 gallery-item">
+            <img src="j5.png" class="img-fluid" alt="Foto 5">
+            <p>This project is the result of our initial forays into programming and art, carried out with limited time and resources.</p>
+        </div>
+        <div class="col-md-8 gallery-item">
+            <img src="j6.png" class="img-fluid" alt="Foto 6">
+            <p>However, we are excited about the future, where we hope to develop even more innovative ideas and projects that can contribute to solving problems in society.</p>
+        </div>
+        <div class="col-md-8 gallery-item">
+            <img src="j7.png" class="img-fluid" alt="Foto 7">
+            <p>Images Related to the Game</p>
+        </div>
+        <div class="col-md-8 gallery-item">
+            <img src="j8.png" class="img-fluid" alt="Foto 8">
+            <p>Images Related to the Game</p>
+        </div>
+        <div class="col-md-8 gallery-item">
+            <img src="j9.png" class="img-fluid" alt="Foto 9">
+            <p>Images Related to the Game</p>
+        </div>
+        <div class="col-md-8 gallery-item">
+            <img src="j10.jpg" class="img-fluid" alt="Foto 10">
+            <p>Images Related to the Game0</p>
+        </div>
+        <div class="col-md-8 gallery-item">
+            <img src="j11.jpg" class="img-fluid" alt="Foto 11">
+            <p>Images Related to the Game</p>
+        </div>
+        <div class="col-md-8 gallery-item">
+            <img src="j12.jpg" class="img-fluid" alt="Foto 12">
+            <p>Images Related to the Game</p>
+        </div>
+        <div class="col-md-8 gallery-item">
+            <img src="j13.jpg" class="img-fluid" alt="Foto 13">
+            <p>Images Related to the Game</p>
+        </div>
+        <div class="col-md-8 gallery-item">
+            <img src="j14.jpg" class="img-fluid" alt="Foto 14">
+            <p>Images Related to the Game</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<footer>
+    <p>&copy; 2024 Planetarium 42. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
